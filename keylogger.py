@@ -1,7 +1,7 @@
 from pynput.keyboard import Listener, Key
 from collections import deque
 
-password = ["s", "q", "Key.space", "'", "-", "Key.space" ]
+password = ["0", "0", "0", "u"]
 keys = deque(maxlen=6)
 
 
