@@ -8,6 +8,8 @@ keys = deque(maxlen=6)
 def formatKey(key):
     if '<Key.space>' in key:
         return ' '
+    if '<Key.enter>' in key:
+        return '\n'
     else:
         return key
 
@@ -33,4 +35,5 @@ def screen(key):
 
 
 with Listener(on_release = screen) as listener:
+    log('\n\n')
     listener.join()

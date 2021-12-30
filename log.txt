@@ -1,1 +1,7 @@
-testetestesqteste
+
+
+ola teste
+
+
+escrevemdp <Key.backspace>  <Key.backspace>  <Key.backspace> ndo mais uma vez
+dei enter
